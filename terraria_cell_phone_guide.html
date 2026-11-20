@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171b25">
+<title>Terraria Cell Phone — Crafting Guide</title>
+<style>
+:root{--bg:#10141d;--panel:#1a2130;--panel2:#222c3e;--line:#344158;--text:#f1f5fb;--muted:#aab6c9;--green:#83e0a5;--gold:#ffd36e;--blue:#8cc8ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#263b50 0,#10141d 55%);color:var(--text);font:16px/1.55 system-ui,Segoe UI,sans-serif}
+.wrap{max-width:920px;margin:auto;padding:34px 18px 70px}.hero{text-align:center;padding:28px 10px 34px}.eyebrow{color:var(--green);font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:.76rem}
+h1{font-size:clamp(2rem,6vw,3.5rem);line-height:1.08;margin:12px 0}.hero p{color:var(--muted);max-width:650px;margin:12px auto}
+.pill{display:inline-block;border:1px solid #496079;background:#1b2a3b;color:#cde7ff;border-radius:99px;padding:5px 12px;font-size:.82rem}
+.progressbox,.step,.final{background:linear-gradient(145deg,var(--panel),#171d29);border:1px solid var(--line);border-radius:18px}
+.progressbox{padding:18px 20px;margin-bottom:22px}.progressrow{display:flex;justify-content:space-between;gap:12px;font-weight:700}.bar{height:10px;background:#0d121a;border-radius:20px;overflow:hidden;margin-top:12px}.fill{height:100%;width:0;background:linear-gradient(90deg,#4dbd80,#b3ef9d);transition:width .2s}
+.step{padding:20px;margin:15px 0;position:relative}.stephead{display:flex;align-items:flex-start;gap:14px}.num{flex:0 0 38px;height:38px;border-radius:12px;background:#2c4053;color:var(--green);display:grid;place-items:center;font-weight:900}
+h2{font-size:1.18rem;margin:3px 0 2px}.sub{color:var(--muted);font-size:.9rem}.station{color:var(--gold);font-size:.82rem;font-weight:750;margin-top:5px}
+.items{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:9px;margin:17px 0 5px}.item{display:flex;align-items:center;gap:10px;background:var(--panel2);border:1px solid #35435a;border-radius:12px;padding:11px 12px;cursor:pointer;min-height:48px}.item input{accent-color:#65d891;width:17px;height:17px;flex:0 0 auto}.item:has(input:checked){opacity:.62;text-decoration:line-through}.note{border-left:3px solid var(--blue);padding:9px 12px;background:#17283a;color:#c7d9ed;border-radius:0 9px 9px 0;margin-top:13px;font-size:.9rem}
+.details{color:var(--muted);font-size:.92rem;margin:12px 0 0}.final{padding:24px;text-align:center;border-color:#648a72;background:linear-gradient(145deg,#1b3329,#18251f);margin-top:24px}.final h2{font-size:1.5rem;color:var(--green)}.final p{color:#d4e7d9}.reset{display:block;margin:20px auto 0;background:transparent;border:1px solid #60718b;color:var(--text);border-radius:10px;padding:9px 15px;cursor:pointer}.reset:hover{background:#273449}.footer{text-align:center;color:#8593a8;font-size:.82rem;margin-top:28px}.footer a{color:var(--blue)}
+@media(max-width:540px){.wrap{padding:18px 12px 45px}.step{padding:16px}.items{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero">
+  <div class="eyebrow">Terraria crafting walkthrough</div>
+  <h1>📱 Craft the <span style="color:var(--green)">Cell Phone</span></h1>
+  <p>Follow the steps, collect each ingredient, and tick off the checklist as you go. You’ll combine the four information accessories into a PDA, then turn it into a Cell Phone.</p>
+  <span class="pill">Tinkerer's Workshop required</span>
+</header>
+
+<section class="progressbox" aria-live="polite">
+  <div class="progressrow"><span>Your crafting progress</span><span id="count">0 / 15 checked</span></div>
+  <div class="bar"><div class="fill" id="fill"></div></div>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">1</div><div><h2>Craft the GPS</h2><div class="sub">The GPS tracks time, depth, and location information.</div><div class="station">Combine at a Tinkerer's Workshop</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>Gold Watch</b> or Platinum Watch</span></label>
+  <label class="item"><input type="checkbox"><span><b>Compass</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Depth Meter</b></span></label>
+ </div>
+ <p class="details">Watch crafting: 10 Gold or Platinum Bars + 1 Chain, crafted at a Table and Chair. Compass and Depth Meter are dropped by certain enemies.</p>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">2</div><div><h2>Craft the R.E.K. 3000</h2><div class="sub">Combines radar, enemy-counting, and nearby-life detection.</div><div class="station">Combine at a Tinkerer's Workshop</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>Radar</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Tally Counter</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Lifeform Analyzer</b></span></label>
+ </div>
+ <p class="details">Radar: found in surface and underground chests. Tally Counter: dropped by enemies in the Dungeon. Lifeform Analyzer: sold by the Traveling Merchant.</p>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">3</div><div><h2>Craft the Goblin Tech</h2><div class="sub">Shows nearby metal, movement speed, and damage per second.</div><div class="station">Combine at a Tinkerer's Workshop</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>Metal Detector</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Stopwatch</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>DPS Meter</b></span></label>
+ </div>
+ <p class="details">Metal Detector: dropped by Nymphs (Lost Girls). Stopwatch and DPS Meter: sold by the Traveling Merchant.</p>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">4</div><div><h2>Craft the Fish Finder</h2><div class="sub">Combines the Angler's fishing information accessories.</div><div class="station">Combine at a Tinkerer's Workshop</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>Fisherman's Pocket Guide</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Weather Radio</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Sextant</b></span></label>
+ </div>
+ <p class="note">All three are random rewards for completing Angler fishing quests. Keep doing quests if you haven't received them yet.</p>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">5</div><div><h2>Craft the PDA</h2><div class="sub">You need all four accessories made in steps 1–4.</div><div class="station">Combine at a Tinkerer's Workshop</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>GPS</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>R.E.K. 3000</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Goblin Tech</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>Fish Finder</b></span></label>
+ </div>
+</section>
+
+<section class="step">
+ <div class="stephead"><div class="num">6</div><div><h2>Find a Magic Mirror</h2><div class="sub">This is the teleportation part of the recipe.</div></div></div>
+ <div class="items">
+  <label class="item"><input type="checkbox"><span><b>Magic Mirror</b></span></label>
+  <label class="item"><input type="checkbox"><span><b>OR Ice Mirror</b></span></label>
+ </div>
+ <p class="details">Find a Magic Mirror in Underground or Cavern chests, or an Ice Mirror in Ice biome chests. You only need one.</p>
+</section>
+
+<section class="final">
+ <div style="font-size:2.4rem">🎉</div>
+ <h2>7. Craft the Cell Phone!</h2>
+ <p>At the Tinkerer's Workshop, combine:</p>
+ <p><b>1 PDA + 1 Magic Mirror or Ice Mirror</b></p>
+ <p>That's it — you've crafted the <b>Cell Phone</b>! It provides lots of useful information and lets you teleport home.</p>
+</section>
+
+<button class="reset" id="reset">Reset all checkboxes</button>
+<footer class="footer">Terraria Cell Phone crafting guide · Recipe reference: <a href="https://terraria.wiki.gg/wiki/Cell_Phone" target="_blank" rel="noopener">Terraria Wiki</a></footer>
+</main>
+<script>
+const boxes=[...document.querySelectorAll('.items input[type="checkbox"]')];
+const fill=document.getElementById('fill'),count=document.getElementById('count');
+function update(){const n=boxes.filter(x=>x.checked).length;count.textContent=`${n} / ${boxes.length} checked`;fill.style.width=`${n/boxes.length*100}%`}
+boxes.forEach(x=>x.addEventListener('change',update));
+document.getElementById('reset').addEventListener('click',()=>{boxes.forEach(x=>x.checked=false);update()});
+update();
+</script>
+</body>
+</html>
